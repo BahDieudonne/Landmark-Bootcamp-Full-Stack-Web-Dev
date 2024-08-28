@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+header{
+  background-color: black;
+}
+
+/*.container{
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  min-width: 500px;
+  margin: auto;
+}*/
+
+h2{
+  color: white;
+}
+.btn{
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: red;
+  border-radius: 4px;
+}
+.border{
+  border: 1px solid white;
+  background-color: black;
+}
+.bg{
+  background: #4c5fd5;
+}
+.search-section{
+  background-color: #dadbf0;
+  min-height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1{
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+  } 
+}
+
+/* css positionning */
+.search-field{
+  position: relative;
+  width: 400px;
+}
+input{
+  width: 100%;
+  font-size: 18px;
+  padding: 14px 16px;
+}
+/* font awesome arrow */
+.arrow{
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*.grid{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}*/
+
+/* box content */
+
+/*.box{
+  display: flex;
+}*/
+
+/*img{
+  width: 100px;
+}*/
+
+/*.content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}*/
+
+/* MEDIA QUERY (RESPONSIVNESS) */
+
+/* || SMALL */
+@media screen and (min-width: 481px){
+  .container{
+    display: flex;
+    padding: 16px;
+    max-width: auto;
+    min-width: auto;
+    margin: auto;
+  }
+  .grid{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  .box{
+    display: flex;
+  }
+  img{
+    width: 100px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px){
+  .container{
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    min-width: 500px;
+    margin: auto;
+  }
+  .grid{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box{
+    display: flex;
+  }
+  img{
+    width: 100px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px){
+  .container{
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    min-width: 500px;
+    margin: auto;
+  }
+  .grid{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box{
+    display: flex;
+  }
+  img{
+    width: 100px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* || XL */
+@media screen and (min-width: 1200px){
+  .container{
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    min-width: 500px;
+    margin: auto;
+  }
+  .grid{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box{
+    display: flex;
+  }
+  img{
+    width: 100px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* || MOBILE DEVICE LANDSCAPE*/
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+  .container{
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    min-width: 500px;
+    margin: auto;
+  }
+  .grid{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box{
+    display: flex;
+  }
+  img{
+    width: 100px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
